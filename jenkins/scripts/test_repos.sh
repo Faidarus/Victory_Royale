@@ -5,6 +5,8 @@ curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo npm link @angular/cli
 sudo npm install --global yarn
-ng test ${frontend}
-ng e2e ${frontend}
-ng serve ${frontend}
+cd spring-petclinic-angular
+ng test #${frontend}
+ng e2e #${frontend}
+ng serve #${frontend}
+cd ..
