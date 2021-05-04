@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y nodejs
 #sudo npm link @angular/cli
 sudo npm install --global yarn
-npm i --save-dev @angular/compiler-cli
+npm install -g @angular/cli@latest 
 #sudo npm install --save-dev @angular-devkit/build-angular
 cd spring-petclinic-angular
 ng test #${frontend}
