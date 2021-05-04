@@ -4,6 +4,9 @@ pipeline {
     enviroment {
 
     }*/
+    tools {
+        nodejs "nodejs"
+    }
     stages {
         stage ("Clean Up Previous Repos"){
             steps {
