@@ -7,12 +7,12 @@ pipeline {
     stages {
         stage ("Pull") {
             steps{
-                sh "bash scripts/clone_repos.sh"
+                sh "bash jenkins/scripts/clone_repos.sh"
             }
         }
         stage ("Test") {
             steps {
-                sh "bash scripts/test_repos.sh"
+                sh "bash jenkins/scripts/test_repos.sh"
             }
         }
         stage ("Build") {
@@ -28,7 +28,7 @@ pipeline {
         }
         stage ("Clean Up Repos"){
             steps {
-                sh "bash scripts/remove_repos.sh"
+                sh "bash jenkins/scripts/remove_repos.sh"
             }
         }
         stage ("Terraform"){
