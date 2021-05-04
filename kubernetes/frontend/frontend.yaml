@@ -29,6 +29,6 @@ spec:
               hostname: frontend
       containers:
       - name: frontend
-        image: docktermo/frontend
+        image: 2033109/frontend
         ports:
         - containerPort: 4200
