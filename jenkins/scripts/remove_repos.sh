@@ -1,9 +1,9 @@
-DIR="/spring-petclinic-angular/"
+DIR="/home/jenkins/.jenkins/workspace/pet-clinic/spring-petclinic-angular/"
 if [ -d "$DIR" ]; then
     rm -r $DIR
 fi
 
-DIR="/spring-petclinic-rest/"
+DIR="/home/jenkins/.jenkins/workspace/pet-clinic/spring-petclinic-rest/"
 if [ -d "$DIR" ]; then
     rm -r $DIR
 fi 
