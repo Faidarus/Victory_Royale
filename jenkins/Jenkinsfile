@@ -1,8 +1,9 @@
 pipeline {
     ageny any
+    /*
     enviroment {
 
-    }
+    }*/
     stages {
         stage ("Pull") {
             steps{
@@ -16,11 +17,12 @@ pipeline {
         }
         stage ("Build") {
             steps {
-
+                sh "echo build"
             }
         }
         stage ("Push") {
             steps {
+                sh "echo push"
                 
             }
         }
@@ -31,11 +33,13 @@ pipeline {
         }
         stage ("Terraform"){
             steps {
+                sh "echo terraform"
 
             }
         }
         stage ("Deploy"){
             steps {
+                sh "echo deploy"
 
             }
         }
