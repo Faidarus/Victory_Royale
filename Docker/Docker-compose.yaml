@@ -1,0 +1,20 @@
+version: "0.0.1"
+  
+services:
+  backend:
+    image: jmiller2612/backend:latest
+    build: ./spring-petclinic-rest
+    ports:
+    - "9966:9966"
+
+  frontend:
+    image: jmiller2612/frontend:latest
+    build: ./spring-petclinic-angular
+    ports:
+    - "8080:8080"
+  nginx:
+    image: jmiller2612/nginx
+    build: ./kubernetes/nginx
+    ports:
+      - 80:80
+    container_name: nginx
