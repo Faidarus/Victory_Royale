@@ -1,10 +1,10 @@
 frontend="spring-petclinic-angular/angular.json"
-apt-get update
+sudo apt-get update
 #sudo apt-get install curl
 #curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
-apt-get install -y nodejs
-#sudo npm link @angular/cli
-#sudo npm install --global yarn
+sudo apt-get install -y nodejs
+sudo npm link @angular/cli
+sudo npm install --global yarn
 #sudo npm install --save-dev @angular-devkit/build-angular
 cd spring-petclinic-angular
 ng test #${frontend}
