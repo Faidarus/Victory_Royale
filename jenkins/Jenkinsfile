@@ -5,6 +5,11 @@ pipeline {
 
     }*/
     stages {
+        stage ("Clean Up Previous Repos"){
+            steps {
+                sh "bash jenkins/scripts/remove_repos.sh"
+            }
+        }
         stage ("Pull") {
             steps{
                 sh "bash jenkins/scripts/clone_repos.sh"
