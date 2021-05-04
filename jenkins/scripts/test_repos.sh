@@ -1,5 +1,5 @@
 frontend="spring-petclinic-angular/angular.json"
-sudo chown -R $USER /usr/local/lib/node_modules
+sudo chown -R $USER:$(id -gn $USER) /home/jenkins/.config
 sudo apt-get update
 sudo apt-get install -y nodejs
 npm install --global yarn
