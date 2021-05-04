@@ -5,7 +5,9 @@ pipeline {
 
     }*/
     tools {
-        nodejs = "nodejs"
+        maven 'Maven 3.6.3'
+        jdk 'jdk9'
+        nodejs 'node 8.10.0'
     }
     stages {
         stage ("Clean Up Previous Repos"){
