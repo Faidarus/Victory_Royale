@@ -1,0 +1,50 @@
+pipeline {
+    ageny any
+    enviroment {
+
+    }
+    stages {
+        stage ("Pull") {
+            steps{
+                sh "bash scripts/clone_repos.sh"
+            }
+        }
+        stage ("Test") {
+            steps {
+                sh "bash scripts/test_repos.sh"
+            }
+        }
+        stage ("Build") {
+            steps {
+
+            }
+        }
+        stage ("Push") {
+            steps {
+                
+            }
+        }
+        stage ("Clean Up Repos"){
+            steps {
+
+            }
+        }
+        stage ("Terraform"){
+            steps {
+
+            }
+        }
+        stage ("Deploy"){
+            steps {
+
+            }
+        }
+    }
+    /*
+    post{
+        always {
+
+        }
+    }
+    */
+}
