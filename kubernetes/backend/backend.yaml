@@ -19,6 +19,5 @@ spec:
       - name: backend
         image: springcommunity/spring-petclinic-rest:latest
         ports:
-        - port: 9966
-          containerPort: 9966
+          - containerPort: 9966
       type: ClusterIP

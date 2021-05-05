@@ -19,6 +19,5 @@ spec:
       - name: frontend
         image: springcommunity/spring-petclinic-angular:latest
         ports:
-        - port: 8080
-          containerPort: 8080
+        - containerPort: 8080
       type: ClusterIP
