@@ -10,14 +10,14 @@ services:
     container_name: nginx
     
   backend:
-    image: 2033109/backend:latest
+    image: springcommunity/spring-petclinic-rest:latest
     build: spring-petclinic-rest
     ports:
       - 9966:9966
     container_name: backend
 
   frontend:
-    image: 2033109/frontend:latest
+    image: springcommunity/spring-petclinic-angular:latest
     build: spring-petclinic-angular
     ports:
       - 8080:8080

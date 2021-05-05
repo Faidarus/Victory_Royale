@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: frontend
-    image: 2033109/frontend:latest
+    image: springcommunity/spring-petclinic-angular:latest
     imagePullPolicy: Always
     ports:
     - containerPort: 8080
