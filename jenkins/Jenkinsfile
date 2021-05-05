@@ -15,19 +15,17 @@ pipeline {
                 sh "bash jenkins/scripts/clone_repos.sh"
             }
         }
-        stage ("Test") {
-            steps {
-                sh "bash jenkins/scripts/test_repos.sh"
-            }
-        }
         stage ("Build") {
             steps {
-                sh "echo build"
+                sh "cd kubernetes"
+                sh "docker-compose build"
+                sh "cd .."
             }
         }
         stage ("Push") {
             steps {
-                sh "echo push"
+                sh "docker push 2033109/frontend"
+                sh "docker push 2033109/backend"
                 
             }
         }
@@ -49,11 +47,4 @@ pipeline {
             }
         }
     }
-    /*
-    post{
-        always {
-
-        }
-    }
-    */
 }
