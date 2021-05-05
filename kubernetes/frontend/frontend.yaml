@@ -16,7 +16,7 @@ spec:
         component: web
     spec:
       containers:
-        - name: frontend
+      - name: frontend
         image: springcommunity/spring-petclinic-angular:latest
         ports:
         - port: 8080
