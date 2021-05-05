@@ -2,16 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
+  labels:
+      app: backend
 spec:
   replicas: 3
   selector:
-      app: backend
-      ports:
-      - port: 9966
-        targetPort: 9966
-        protocol: TCP
-      type: ClusterIP
     matchLabels:
+        app: backend
       component: web
   template:
     metadata:
@@ -21,5 +18,8 @@ spec:
       containers:
         - name: backend
           image: springcommunity/spring-petclinic-rest:latest
-          ports:
-            - containerPort: 9966
+        ports:
+        - port: 9966
+          targetPort: 9966
+          protocol: TCP
+      type: ClusterIP

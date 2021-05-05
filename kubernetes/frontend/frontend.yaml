@@ -2,11 +2,13 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend
+  labels:
+      app: frontend
 spec:
-  replicas: 1
+  replicas: 3
   selector:
-    app: frontend
     matchLabels:
+        app: frontend
       component: web
   template:
     metadata:
@@ -16,6 +18,8 @@ spec:
       containers:
         - name: frontend
           image: springcommunity/spring-petclinic-angular:latest
-          ports:
-            - containerPort: 8080
-              type: ClusterIP
+        ports:
+        - port: 8080
+          targetPort: 8080
+          protocol: TCP
+      type: ClusterIP
