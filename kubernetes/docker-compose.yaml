@@ -4,18 +4,21 @@ services:
 
   nginx:
     image: nginx:latest
+    build: ./nginx
     ports:
       - 80:80
     container_name: nginx
     
   backend:
     image: 2033109/backend:latest
+    build: ../spring-petclinic-rest
     ports:
       - 9966:9966
     container_name: backend
 
   frontend:
     image: 2033109/frontend:latest
+    build: ../spring-petclinic-angular
     ports:
       - 4200:4200
     container_name: frontend
