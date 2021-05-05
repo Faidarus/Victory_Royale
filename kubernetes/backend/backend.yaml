@@ -9,15 +9,13 @@ spec:
   selector:
     matchLabels:
       app: backend
-      component: web
   template:
     metadata:
       labels:
-        component: web
+        app: frontend
     spec:
       containers:
       - name: backend
         image: springcommunity/spring-petclinic-rest:latest
         ports:
           - containerPort: 9966
-        type: ClusterIP
