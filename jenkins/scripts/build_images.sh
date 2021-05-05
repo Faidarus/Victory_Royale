@@ -5,6 +5,8 @@ mv Docker/application.properties spring-petclinic-rest/src/main/resources/
 echo "stuff here"
 ls
 echo "stuff in petclinic rest"
-ls /spring-petclinic-rest
+cd spring-petclinic-rest
+ls 
+cd ..
 docker-compose build
 ls
