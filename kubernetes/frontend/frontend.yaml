@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: frontend
   labels:
-      app: frontend
+    app: frontend
 spec:
   replicas: 3
   selector:
     matchLabels:
-        app: frontend
+      app: frontend
       component: web
   template:
     metadata:
