@@ -20,4 +20,4 @@ spec:
         image: springcommunity/spring-petclinic-angular:latest
         ports:
         - containerPort: 8080
-      type: ClusterIP
+        type: ClusterIP
