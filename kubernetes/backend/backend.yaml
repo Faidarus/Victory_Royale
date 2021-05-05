@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: springcommunity/spring-petclinic-rest:latest
+        image: springcommunity/spring-petclinic-rest:latest
         ports:
         - port: 9966
           targetPort: 9966
