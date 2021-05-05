@@ -5,6 +5,12 @@ metadata:
 spec:
   replicas: 3
   selector:
+      app: frontend
+      ports:
+      - port: 8080
+        targetPort: 8080
+        protocol: TCP
+      type: ClusterIP
     matchLabels:
       component: web
   template:
@@ -17,3 +23,4 @@ spec:
           image: springcommunity/spring-petclinic-rest:latest
           ports:
             - containerPort: 9966
+          
