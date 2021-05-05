@@ -11,14 +11,14 @@ services:
     
   backend:
     image: 2033109/backend:latest
-    build: Docker/backend
+    build: spring-petclinic-rest
     ports:
       - 9966:9966
     container_name: backend
 
   frontend:
     image: 2033109/frontend:latest
-    build: Docker/frontend
+    build: spring-petclinic-angular
     ports:
-      - 4200:4200
+      - 8080:8080
     container_name: frontend
