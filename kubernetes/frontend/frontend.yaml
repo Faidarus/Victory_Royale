@@ -6,11 +6,6 @@ spec:
   replicas: 1
   selector:
     app: frontend
-    ports:
-    - port: 8080
-      targetPort: 8080
-      protocol: TCP
-    type: ClusterIP
     matchLabels:
       component: web
   template:
@@ -23,4 +18,7 @@ spec:
           image: springcommunity/spring-petclinic-angular:latest
           ports:
             - containerPort: 8080
-            
+                ports:
+                  targetPort: 8080
+                  protocol: TCP
+                type: ClusterIP
