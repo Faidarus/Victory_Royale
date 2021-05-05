@@ -5,13 +5,12 @@ metadata:
 spec:
   replicas: 1
   selector:
-    selector:
-      app: frontend
-      ports:
-      - port: 8080
-        targetPort: 8080
-        protocol: TCP
-      type: ClusterIP
+    app: frontend
+    ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+    type: ClusterIP
     matchLabels:
       component: web
   template:
