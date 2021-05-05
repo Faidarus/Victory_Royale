@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend
+  name: frontend
 spec:
   replicas: 3
   selector:
@@ -13,7 +13,7 @@ spec:
         component: web
     spec:
       containers:
-        - name: backend
-          image: springcommunity/spring-petclinic-rest:latest
+        - name: frontend
+          image: springcommunity/spring-petclinic-angular:latest
           ports:
             - containerPort: 8080
