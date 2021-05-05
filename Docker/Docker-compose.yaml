@@ -2,18 +2,19 @@ version: "0.0.1"
   
 services:
   backend:
-    image: jmiller2612/backend:latest
-    build: ./spring-petclinic-rest
+    image: 2033109/backend:latest
+    build: ./backend
     ports:
     - "9966:9966"
 
   frontend:
-    image: jmiller2612/frontend:latest
+    image: 2033109/frontend:latest
     build: ./spring-petclinic-angular
     ports:
     - "8080:8080"
+    
   nginx:
-    image: jmiller2612/nginx
+    image: 2033109/nginx
     build: ./kubernetes/nginx
     ports:
       - 80:80
