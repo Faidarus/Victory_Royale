@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend
+spec:
+  containers:
+  - name: backend
+    image: 2033109/backend:latest
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 8080
+  selector:
+    matchLabels:
+      app: backend
+    replicas: 2
+  ports:
+  - protocol: TCP
+    port: 9966
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
