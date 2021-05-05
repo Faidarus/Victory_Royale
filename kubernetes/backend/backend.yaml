@@ -1,28 +1,19 @@
-apiVersion: v1
-kind: Service
-metadata:
-  name: backend
-  labels:
-    app: backend
-spec:
-  containers:
-  - name: backend
-    image: springcommunity/spring-petclinic-rest:latest
-    ports:
-    - containerPort: 9966
-  type: ClusterIP
-
----
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend
-  labels:
-    app: backend
+  name: frontend
 spec:
-  containers:
-  - name: backend
-    image: springcommunity/spring-petclinic-rest:latest
-    ports:
-    - containerPort: 9966
-  type: ClusterIP
+  replicas: 3
+  selector:
+    matchLabels:
+      component: web
+  template:
+    metadata:
+      labels:
+        component: web
+    spec:
+      containers:
+        - name: frontend
+          image: springcommunity/spring-petclinic-angular:latest
+          ports:
+            - containerPort: 8080
