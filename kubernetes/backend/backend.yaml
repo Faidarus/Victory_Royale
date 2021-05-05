@@ -3,8 +3,16 @@ kind: Service
 metadata:
   name: backend
 spec:
+  containers:
+  - name: backend
+    image: 2033109/backend:latest
+    imagePullPolicy: Always
+    ports:
+    - containerPort: 8080
   selector:
-    app: backend
+    matchLabels:
+      app: backend
+    replicas: 2
   ports:
   - protocol: TCP
     port: 9966
