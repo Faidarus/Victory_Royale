@@ -20,6 +20,5 @@ spec:
         image: springcommunity/spring-petclinic-rest:latest
         ports:
         - port: 9966
-          targetPort: 9966
-          protocol: TCP
+          containerPort: 9966
       type: ClusterIP
