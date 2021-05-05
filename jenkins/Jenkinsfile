@@ -17,9 +17,7 @@ pipeline {
         }
         stage ("Build") {
             steps {
-                sh "cd kubernetes"
-                sh "docker-compose build"
-                sh "cd .."
+                sh "bash jenkins/scripts/build_images.sh"
             }
         }
         stage ("Push") {
