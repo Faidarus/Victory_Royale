@@ -17,7 +17,7 @@ pipeline {
                 sh "bash jenkins/scripts/clone_repos.sh"
             }
         }
-        /*
+        
         stage ("Build") {
             steps {
                 sh "bash jenkins/scripts/build_images.sh"
@@ -30,7 +30,7 @@ pipeline {
                 
             }
         }
-        */
+        
         stage ("Clean Up Repos"){
             steps {
                 sh "bash jenkins/scripts/remove_repos.sh"

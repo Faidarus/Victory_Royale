@@ -1,14 +1,17 @@
-version: "0.0.1"
-  
+version: "3.8"
 services:
-  backend:
-    image: 2033109/backend:latest
-    build: ./backend
-    ports:
-    - "9966:9966"
 
-  frontend:
-    image: 2033109/frontend:latest
-    build: ./frontend
-    ports:
-    - "8080:8080"
+    backend:
+        image: 2033109/backend:latest
+        ports:
+        - target: 9966
+          published: 9966
+          protocol: tcp
+
+    frontend:
+        build: ./spring-petclinic-angular/
+        image: 2033109/frontend:latest
+        ports:
+        - target: 8080
+          published: 8080
+          protocol: tcp
