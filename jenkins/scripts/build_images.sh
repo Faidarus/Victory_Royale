@@ -4,11 +4,11 @@
 #mv Docker/application.properties spring-petclinic-rest/src/main/resources/
 #mv Docker/backend/Dockerfile spring-petclinic-rest/
 
-#docker-compose build
+docker-compose build
 #ls
 
 
-docker pull 2033109/backend:latest
-docker pull 2033109/frontend:latest
-docker pull springcommunity/spring-petclinic-rest:latest
-docker pull springcommunity/spring-petclinic-angular:latest
+#docker pull 2033109/backend:latest
+#docker pull 2033109/frontend:latest
+#docker pull springcommunity/spring-petclinic-rest:latest
+#docker pull springcommunity/spring-petclinic-angular:latest
