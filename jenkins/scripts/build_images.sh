@@ -7,7 +7,8 @@
 #docker-compose build
 #ls
 
-docker pull springcommunity/spring-petclinic-rest:latest
-docker pull 2033109/frontend:latest
 
+docker pull 2033109/backend:latest
+docker pull 2033109/frontend:latest
+docker pull springcommunity/spring-petclinic-rest:latest
 docker pull springcommunity/spring-petclinic-angular:latest
