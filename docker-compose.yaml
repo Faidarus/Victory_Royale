@@ -17,7 +17,7 @@ services:
     container_name: backend
 
   frontend:
-    image: springcommunity/spring-petclinic-angular:latest
+    image: /spring-petclinic-angular:latest
     build: spring-petclinic-angular
     ports:
       - 8080:8080
