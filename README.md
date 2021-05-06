@@ -20,8 +20,6 @@ In the sprint planning meeting the team discused which requirements from the Pro
 Our team had daily scrum meeting to determine the working progress of the team and keep all team members
 informed and up-to-date with all areas of activities.
 
-. Afterwards the product owner examines if all requirement of the sprint backlog have been fulfilled. Requirements that are not fulfilled will move back into the product backlog.
-
 Our sprint retrospective  meeting conducted at the end of each day allowed the team to reflect on how things went and what could be improved as well as determine if extra help was needed in certain areas.
 
 
@@ -34,7 +32,6 @@ please find link to Trello Board:
 https://trello.com/b/9l9FLICk/victory-royal
 
 ![snapshot of trello board]
-
 
 # Architecture
 
@@ -86,7 +83,7 @@ The build stage builds all the containers and images
 The test stage tests the application is working properly 
 The push stage tags and pushes images to Dockerhub
 - stage checks the swarm is working as it should
-Deploy stage deploys the containers -
+Deploy stage deploys the containers 
 
 # Risk Assessment 
 
