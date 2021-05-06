@@ -94,7 +94,7 @@ Risk assessment:
 
 Team Victory-Royale consisting of:
 
-Ayona Duncan, Fatima Aidarus. Pabianczyk Eryk, Jack Miller and Tom Marvin 
+Ayona Duncan, Fatima Aidarus, Pabianczyk Eryk, Jack Miller and Tom Marvin 
 
 # References
 
