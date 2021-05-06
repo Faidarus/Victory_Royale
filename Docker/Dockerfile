@@ -1,31 +1,17 @@
-####################################################################
-# Stage 1 : NODE_BUILD
-#
-# Use a docker image with NODE to build the deliverable
-# Build everywhere
-####################################################################
-
 FROM node:12 as build
 
 
-# Get Sources
 RUN apt update && \
  	apt install -y git && \
 	git clone https://github.com/spring-petclinic/spring-petclinic-angular.git /workspace
 
 ARG NPM_REGISTRY=" https://registry.npmjs.org"
 
-# Enforcing env var BACKEND_URL
 RUN echo "export const environment = {production: false, REST_API_URL:  'http://petclinic-backend:9966/petclinic/api/'};" > /workspace/src/environments/environment.ts && \
 	echo "registry = \"$NPM_REGISTRY\"" > /workspace/.npmrc && \
     cd /workspace/ && \
     npm install    && \
     npm run build
-
-####################################################################
-# Stage 2 : RUNTIME
-# Use the DIST folder to package an image with NGINX.
-####################################################################
 
 FROM nginx:1.19.4 AS runtime
 
