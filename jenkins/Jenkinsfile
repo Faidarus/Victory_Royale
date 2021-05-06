@@ -25,8 +25,7 @@ pipeline {
 
         stage ("Push") {
             steps {
-                sh "docker push 2033109/frontend"
-                sh "docker push 2033109/backend"
+                sh "docker push 2033109/frontend:latest"
                 
             }
         }
