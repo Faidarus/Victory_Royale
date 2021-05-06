@@ -8,6 +8,6 @@
 #ls
 
 docker pull springcommunity/spring-petclinic-rest:latest
-docker pull 2033109/frontendnonginx:latest
+docker pull 2033109/frontend:latest
 
 docker pull springcommunity/spring-petclinic-angular:latest
