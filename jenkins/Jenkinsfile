@@ -44,7 +44,7 @@ pipeline {
         stage ("Deploy"){
             steps {
                 sh "echo deploy"
-                sh "sh kubernetes/jenkins/scripts/kubernetes_run.sh"
+                sh "sh jenkins/scripts/kubernetes_run.sh"
             }
         }
     }
