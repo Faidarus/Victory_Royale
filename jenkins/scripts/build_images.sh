@@ -4,7 +4,13 @@
 #mv Docker/application.properties spring-petclinic-rest/src/main/resources/
 #mv Docker/backend/Dockerfile spring-petclinic-rest/
 
+cd spring-petclinc-angular
+rm -f Dockerfile
+cd ..
+cd Docker
+mv Dockerfile ../spring-petclinic-angular/Dockerfile
 docker-compose build
+cd ..
 #ls
 
 

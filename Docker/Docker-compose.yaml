@@ -12,10 +12,3 @@ services:
     build: ./frontend
     ports:
     - "8080:8080"
-    
-  nginx:
-    image: 2033109/nginx
-    build: ./kubernetes/nginx
-    ports:
-      - 80:80
-    container_name: nginx
