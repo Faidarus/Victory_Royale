@@ -2,12 +2,12 @@ ARG DOCKER_HUB="docker.io"
 
 FROM $DOCKER_HUB/library/node:10.10-alpine as build
 
-
 COPY . /workspace/
 
 ARG NPM_REGISTRY=" https://registry.npmjs.org"
 
-RUN echo "registry = \"$NPM_REGISTRY\"" > /workspace/.npmrc                              && \
+RUN echo "export const environment = {production: false, REST_API_URL:  'http://petclinic-backend:9966/petclinic/api/'};" > /workspace/src/environments/environment.ts && \
+    echo "registry = \"$NPM_REGISTRY\"" > /workspace/.npmrc                              && \
     cd /workspace/                                                                       && \
     npm install                                                                          && \
     npm run build
@@ -28,3 +28,5 @@ EXPOSE 8080
 USER nginx
 
 HEALTHCHECK     CMD     [ "service", "nginx", "status" ]
+
+
