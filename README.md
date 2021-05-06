@@ -2,13 +2,13 @@
 
 # Objective 
 
-Our group was tasked with working to complete a deliverable as a team, which involved planning, designing and implementing a solution for automating the development workflows and deployments ofexternally developed applications 'Spring Pet Clinic'- one of which serves as a front end client using AngularJS and the other as an API using Java. 
+Our group was tasked with working to complete a deliverable as a team, which involved planning, designing and implementing a solution for automating the development workflows and deployments of externally developed applications 'Spring Pet Clinic'- one of which serves as a front end client using AngularJS and the other as an API using Java. 
 
 # Project Management 
 
 **MoSCow Planning**
 
-MoSCow method was used as a prioritasion technique to decipher what technologies and services that we needed to have in order to deploy the application. Below is a snapshot of our MosCow method:
+MoSCow method was used as a prioritasion technique to decipher what technologies and services that were essential to have in order to deploy the application. Below is a snapshot of our MosCow method:
 
 ![link to moscow]
 
