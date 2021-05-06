@@ -10,7 +10,7 @@ Our group was tasked with working to complete a deliverable as a team, which inv
 
 MoSCow method was used as a prioritasion technique to decipher what technologies and services that were essential to have in order to deploy the application. Below is a snapshot of our MosCow method:
 
-![link to moscow]
+![snapshot of moscow]
 
 **Sprints**
 
@@ -82,7 +82,6 @@ In the Jenkins file:
 The build stage builds all the containers and images
 The test stage tests the application is working properly 
 The push stage tags and pushes images to Dockerhub
-- stage checks the swarm is working as it should
 Deploy stage deploys the containers 
 
 # Risk Assessment 
@@ -98,3 +97,16 @@ Team Victory-Royale consisting of:
 Ayona Duncan, Fatima Aidarus. Pabianczyk Eryk, Jack Miller and Tom Marvin 
 
 # References
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_role
+https://www.terraform.io/docs/language/modules/develop/composition.html
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
+https://www.terraform.io/downloads.html
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_policy
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_node_group
+https://www.terraform.io/docs/internals/credentials-helpers.html
+https://learn.hashicorp.com/tutorials/terraform/aws-rds?in=terraform/aws
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_node_group
+
