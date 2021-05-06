@@ -5,6 +5,7 @@ cd kubernetes
 kubectl apply -f backend/backend.yaml
 kubectl apply -f frontend/frontend.yaml
 kubectl apply -f nginx/nginx.yaml
+kubectl apply -f nginx/configmap.yaml
 
 kubectl get service
 kubectl get pod
