@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: 2033109/frontendnonginx:latest
+        image: 2033109/frontend:latest
         ports:
         - containerPort: 8080
