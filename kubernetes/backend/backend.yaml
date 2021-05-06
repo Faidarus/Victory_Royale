@@ -5,7 +5,7 @@ metadata:
   labels:
     app: backend
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: backend
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: springcommunity/spring-petclinic-rest:latest
+        image: 2033109/backend:latest
         ports:
         - containerPort: 9966
