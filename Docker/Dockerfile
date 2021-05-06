@@ -6,7 +6,7 @@
 ####################################################################
 
 FROM node:12 as build
-MAINTAINER Cedrick Lunven
+
 
 # Get Sources
 RUN apt update && \
