@@ -9,7 +9,7 @@ services:
 
   frontend:
     image: 2033109/frontend:latest
-    build: ./spring-petclinic-angular
+    build: ./frontend
     ports:
     - "8080:8080"
     
