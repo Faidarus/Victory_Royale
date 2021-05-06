@@ -9,6 +9,7 @@ ARG NPM_REGISTRY=" https://registry.npmjs.org"
 RUN echo "export const environment = {production: false, REST_API_URL:  'http://petclinic-backend:9966/petclinic/api/'};" > /workspace/src/environments/environment.ts && \
     echo "registry = \"$NPM_REGISTRY\"" > /workspace/.npmrc                              && \
     cd /workspace/                                                                       && \
+    npm update                                                                           && \
     npm install                                                                          && \
     npm run build
 
