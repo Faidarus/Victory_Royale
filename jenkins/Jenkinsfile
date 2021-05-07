@@ -1,0 +1,53 @@
+pipeline {
+    agent any
+    /*
+    enviroment {
+
+    }*/
+    stages {
+        stage ("Clean Up Previous Repos"){
+            steps {
+                sh "bash jenkins/scripts/setup.sh"
+                sh "docker image prune -f"
+                sh "bash jenkins/scripts/remove_repos.sh"
+            }
+        }
+        stage ("Pull") {
+            steps{
+                sh "bash jenkins/scripts/clone_repos.sh"
+            }
+        }
+        /*
+        stage ("Build") {
+            steps {
+                sh "bash jenkins/scripts/build_images.sh"
+            }
+        }
+        */
+        /*
+        stage ("Push") {
+            steps {
+                sh "docker push 2033109/frontend:latest"
+                
+            }
+        }
+        */
+        stage ("Clean Up Repos"){
+            steps {
+                sh "bash jenkins/scripts/remove_repos.sh"
+            }
+        }
+        stage ("Terraform"){
+            steps {
+                sh "bash jenkins/scripts/terraform_build.sh"
+                
+            }
+        }
+        stage ("Deploy"){
+            steps {
+                sh "echo deploy"
+                sh "sh jenkins/scripts/kubernetes_run.sh"
+            }
+        }
+    }
+}

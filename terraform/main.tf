@@ -33,7 +33,7 @@ resource "aws_eks_cluster" "ekscluster" {
 
 
   vpc_config {
-    subnet_ids              = ["subnet-989d8dfe", "subnet-b06d30ea"]
+    subnet_ids              = ["subnet-790c7a03", "subnet-6c23a620"]
     endpoint_public_access  = true
     endpoint_private_access = true
   }
@@ -78,7 +78,7 @@ resource "aws_eks_node_group" "vrnodes" {
   cluster_name    = aws_eks_cluster.ekscluster.name
   node_group_name = "vreksgroup"
   node_role_arn   = aws_iam_role.eksnodes.arn
-  subnet_ids      = ["subnet-989d8dfe", "subnet-b06d30ea"]
+  subnet_ids      = ["subnet-790c7a03", "subnet-6c23a620"]
 
 
   scaling_config {
