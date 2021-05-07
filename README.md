@@ -105,7 +105,7 @@ Risk assessment:
 
 # Cost Analysis
 
-![cost](https://github.com/tommarvin/Victory-Royale/blob/master/Images/cost.PNG?raw=true)
+![cost](https://github.com/tommarvin/Victory-Royale/blob/master/Images/cost.png?raw=true)
 
 # Contributors
 
