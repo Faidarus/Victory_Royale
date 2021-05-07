@@ -1,5 +1,7 @@
 # Victory-Royale
 
+![intro](https://github.com/tommarvin/Victory-Royale/blob/master/Images/intro.png?raw=true)
+
 # Objective 
 
 Our group was tasked with working to complete a deliverable as a team, which involved planning, designing and implementing a solution for automating the development workflows and deployments of externally developed applications 'Spring Pet Clinic'- one of which serves as a front end client using AngularJS and the other as an API using Java. 
@@ -10,7 +12,9 @@ Our group was tasked with working to complete a deliverable as a team, which inv
 
 MoSCow method was used as a prioritasion technique to decipher what technologies and services that were essential to have in order to deploy the application. Below is a snapshot of our MosCow method:
 
-![snapshot of moscow]
+![moscow1](https://github.com/tommarvin/Victory-Royale/blob/master/Images/tools.png?raw=true)
+
+![moscow2](https://github.com/tommarvin/Victory-Royale/blob/master/Images/tools2.png?raw=true)
 
 **Sprints**
 
@@ -31,13 +35,13 @@ please find link to Trello Board:
 
 https://trello.com/b/9l9FLICk/victory-royal
 
-![snapshot of trello board]
+![trello](https://github.com/tommarvin/Victory-Royale/blob/master/Images/trello.png?raw=true)
 
 # Architecture
 
-Workflows to set up the application:
+Initial cluster architecture diagram:
 
-![snapshot of workflow]
+![architecture](https://github.com/tommarvin/Victory-Royale/blob/master/Images/architecture.png?raw=true)
 
 # Tech Stack
 
@@ -60,6 +64,8 @@ We have one container per Pod representing a process (pod is the smallest unit i
 **. CI Server - Jenkins** 
 
 Jenkins Pipeline is a user-defined model of a CD pipeline. The Pipeline was achieved using a Jenkinsfile which includes stages for building an application, testing it and then delivering it. This was subsequently committed to this SCR which means that the configuration is portable across different machines.
+
+![jenkins](https://github.com/tommarvin/Victory-Royale/blob/master/Images/pipeline.png?raw=true)
 
 **. Open source repository management - Dockerhub**
 
@@ -88,7 +94,7 @@ Deploy stage deploys the containers
 
 Risk assessment:
 
-![snapshot of risks]
+![risk](https://github.com/tommarvin/Victory-Royale/blob/master/Images/risk.png?raw=true)
 
 # Contributors
 
@@ -109,4 +115,10 @@ https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_
 https://www.terraform.io/docs/internals/credentials-helpers.html
 https://learn.hashicorp.com/tutorials/terraform/aws-rds?in=terraform/aws
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eks_node_group
+https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-api/
+https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
+https://docs.npmjs.com/cli/v6/commands/npm-build
+https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
+https://kubernetes.io/docs/concepts/containers/images/
+QA Community
 
