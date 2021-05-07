@@ -71,7 +71,7 @@ Inital pipeline design:
 
 Actual pipeline used:
 
-![jenkins2](https://github.com/tommarvin/Victory-Royale/blob/master/Images/pipeline2.png?raw=true)
+![jenkins2](https://github.com/tommarvin/Victory-Royale/blob/master/Images/pipeline2.PNG?raw=true)
 
 
 **. Open source repository management - Dockerhub**
