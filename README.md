@@ -12,7 +12,7 @@ Our group was tasked with working to complete a deliverable as a team, which inv
 
 MoSCow method was used as a prioritasion technique to decipher what technologies and services that were essential to have in order to deploy the application. Below is a snapshot of our MosCow method:
 
-![moscow1](https://github.com/tommarvin/Victory-Royale/blob/master/Images/tools.png?raw=true)
+![moscow1](https://github.com/tommarvin/Victory-Royale/blob/master/Images/tools1.png?raw=true)
 
 ![moscow2](https://github.com/tommarvin/Victory-Royale/blob/master/Images/tools2.png?raw=true)
 
