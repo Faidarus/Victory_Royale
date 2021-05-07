@@ -103,6 +103,10 @@ Risk assessment:
 
 ![risk](https://github.com/tommarvin/Victory-Royale/blob/master/Images/risk.png?raw=true)
 
+# Cost Analysis
+
+![cost](https://github.com/tommarvin/Victory-Royale/blob/master/Images/cost.PNG?raw=true)
+
 # Contributors
 
 Team Victory-Royale consisting of:
