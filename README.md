@@ -65,7 +65,14 @@ We have one container per Pod representing a process (pod is the smallest unit i
 
 Jenkins Pipeline is a user-defined model of a CD pipeline. The Pipeline was achieved using a Jenkinsfile which includes stages for building an application, testing it and then delivering it. This was subsequently committed to this SCR which means that the configuration is portable across different machines.
 
+Inital pipeline design:
+
 ![jenkins](https://github.com/tommarvin/Victory-Royale/blob/master/Images/pipeline.png?raw=true)
+
+Actual pipeline used:
+
+![jenkins2](https://github.com/tommarvin/Victory-Royale/blob/master/Images/pipeline2.png?raw=true)
+
 
 **. Open source repository management - Dockerhub**
 
