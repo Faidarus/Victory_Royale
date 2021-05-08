@@ -48,7 +48,9 @@ pipeline {
         }
         */
         stage ("Destroy Cluster"){
-            sh "bash jenkins/scripts/delc.sh"
+            steps{
+                sh "bash jenkins/scripts/delc.sh"
+            }
         }
     }
 }
