@@ -4,8 +4,10 @@ pipeline {
     enviroment {
 
     }*/
-    /*
+    
     stages {
+        
+        /*
         stage ("Clean Up Previous Repos"){
             steps {
                 sh "bash jenkins/scripts/remove_repos.sh"
