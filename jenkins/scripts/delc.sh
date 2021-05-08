@@ -1,3 +1,3 @@
 cd terraform
-terraform destroy -auo-approve
+terraform destroy -force
 cd ..
