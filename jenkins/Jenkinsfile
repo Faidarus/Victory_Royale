@@ -5,6 +5,7 @@ pipeline {
 
     }*/
     stages {
+        /*
         stage ("Clean Up Previous Repos"){
             steps {
                 sh "bash jenkins/scripts/setup.sh"
@@ -16,7 +17,7 @@ pipeline {
             steps{
                 sh "bash jenkins/scripts/clone_repos.sh"
             }
-        }
+        }*/
         /*
         stage ("Build") {
             steps {
@@ -32,6 +33,7 @@ pipeline {
             }
         }
         */
+        /*
         stage ("Clean Up Repos"){
             steps {
                 sh "bash jenkins/scripts/remove_repos.sh"
@@ -47,6 +49,12 @@ pipeline {
             steps {
                 sh "echo deploy"
                 sh "sh jenkins/scripts/kubernetes_run.sh"
+            }
+        }
+        */
+        stage ("Destroy") {
+            steps {
+                sh "bash jenkins/scripts/delc.sh"
             }
         }
     }
