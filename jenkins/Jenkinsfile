@@ -4,6 +4,7 @@ pipeline {
     enviroment {
 
     }*/
+    /*
     stages {
         stage ("Clean Up Previous Repos"){
             steps {
@@ -15,6 +16,7 @@ pipeline {
                 sh "bash jenkins/scripts/clone_repos.sh"
             }
         }
+        
         stage ("Build") {
             steps {
                 sh "bash jenkins/scripts/build_images.sh"
@@ -34,7 +36,7 @@ pipeline {
         }
         stage ("Terraform"){
             steps {
-                sh "echo terraform"
+                sh "bash jenkins/scripts/terraform_build.sh"
                 
             }
         }
@@ -43,6 +45,10 @@ pipeline {
                 sh "echo deploy"
 
             }
+        }
+        */
+        stage ("Destroy Cluster"){
+            sh "bash jenkins/scripts/delc.sh"
         }
     }
 }
